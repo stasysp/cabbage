@@ -58,15 +58,15 @@ class ReId:
         """
 
         fname = join(self.root, model_name)
-        if not isfile(fname):
-            if self.verbose:
+        #if not isfile(fname):
+        if self.verbose:
                 print("Could not find " + fname + ".. attempt download")
-            with urllib.request.urlopen(model_url) as res, open(fname, 'wb') as f:
+        with urllib.request.urlopen(model_url) as res, open(fname, 'wb') as f:
                 shutil.copyfileobj(res, f)
-            if self.verbose:
+        if self.verbose:
                 print("Download complete.. model: " + fname)
-        elif self.verbose:
-            print("Found model " + fname + "! :)")
+        #elif self.verbose:
+        print("Found model " + fname + "! :)")
 
         model = load_model(fname)
         self.model = model
