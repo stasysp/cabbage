@@ -1,7 +1,7 @@
 pip3 install git+https://github.com/stasysp/cabbage.git
-pip3 install git+https://github.com/stasysp/pak.git
-pip3 install git+https://github.com/stasysp/cselect.git
-pip3 install git+https://github.com/stasysp/pppr.git
+pip3 install git+https://github.com/justayak/pak.git
+pip3 install git+https://github.com/justayak/cselect.git
+pip3 install git+https://github.com/justayak/pppr.git
 
 mkdir build
 (cd build && cmake .. && make -j8)
