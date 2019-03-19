@@ -51,11 +51,7 @@ def execute_multiple_people_tracking(video_folder, X, Dt, video_name, dmax, sett
     dm = DeepMatching(deep_matching_binary, data_root, dmax)
     dm.generate_matches(video_folder, video_name)
 
-<<<<<<< HEAD
     reid = StackNet64x64(data_root)
-=======
-    reid = StackNet64x64(root)
->>>>>>> d7c73556e97d2b11770bfe8513d6153223375c44
 
     gg = BatchGraphGenerator(data_root, reid, dm, dmax, video_name)
     gg.build(Dt, X, W, batch_size=batch_size)

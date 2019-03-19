@@ -107,11 +107,7 @@ def gen_feature_batch(batch, lookup, dmax, dm, reid, W, video_name):
 
     aabb_j, aabb_i = aabb_j[IN_RANGE], aabb_i[IN_RANGE]
     scores_i, scores_j = scores_i[IN_RANGE], scores_j[IN_RANGE]
-<<<<<<< HEAD
     frame_i, frame_j = frame_i[IN_RANGE], frame_j[IN_RANGE]
-=======
-    frame_i, framej = frame_i[IN_RANGE], frame_j[IN_RANGE]
->>>>>>> d7c73556e97d2b11770bfe8513d6153223375c44
     i = i[IN_RANGE]; j = j[IN_RANGE]
 
     Im_j, Im_i = \
