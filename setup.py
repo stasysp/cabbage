@@ -5,3 +5,5 @@ setup(
     version="0.0.2",
     packages=["cabbage", "cabbage/data", "cabbage/features"],
 )
+
+# TODO add package prototyping
